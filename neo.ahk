@@ -1369,60 +1369,59 @@ Return
 ;                   ö
 $ö::
 If Modifier1
-    Send, +
+    Send, {+}
 Else
     Send, %KEY_ö%
 Return
 
 $^ö::
 If Modifier1
-    Send, ^+
+    Send, ^{+}
 Else
     Send, ^%KEY_ö%
 Return
 
 $+ö::
 If Modifier1
-    Send, ++
+    Send, +{+}
 Else
     Send, +%KEY_ö%
 Return
 
 $!ö::
 If Modifier1
-    Send, !+
+    Send, !{+}
 Else
     Send, !%KEY_ö%
 Return
 
 $^+ö::
 If Modifier1
-    Send, ^++
+    Send, ^+{+}
 Else
     Send, ^+%KEY_ö%
 Return
 
 $^!ö::
 If Modifier1
-    Send, ^!+
+    Send, ^!{+}
 Else
     Send, ^!%KEY_ö%
 Return
 
 $+!ö::
 If Modifier1
-    Send, +!+
+    Send, +!{+}
 Else
     Send, +!%KEY_ö%
 Return
 
 $^+!ö::
 If Modifier1
-    Send, ^+!+
+    Send, ^+!{+}
 Else
     Send, ^+!%KEY_ö%
 Return
-
 
 
 ; =====================================
