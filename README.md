@@ -2,12 +2,13 @@
 
 This repository contains AutoHotkey scripts which change the keyboard layout
 
-## Neo
-This script converts a qwertz layout to a custom layout inspired by the Neo layout. It remaps letters and characters which are often used in programming. It also makes it possible to use the arrow keys and a few other keys directly on the main keyboard, allowing the user to quickly navigate through text.
+## Usage
+1. Install [AutoHotkey](https://autohotkey.com/)
+2. Clone the repository (`https://github.com/Nimaoth/Keyboard.git`)
+3. Double click `neo/enhanced_neo.ahk`, `neo/enhanced_neo_qwertz.ahk` or `qwertz/enhanced_qwertz.ahk`
 
+## Neo
 ![Layout](neo/layout.png)
 
 ## Qwertz
-This script remaps characters which are often used in programming. It also makes it possible to use the arrow keys and a few other keys directly on the main keyboard, allowing the user to quickly navigate through text.
-
 ![Layout](qwertz/layout.png)
