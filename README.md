@@ -7,8 +7,8 @@ This repository contains AutoHotkey scripts which change the keyboard layout
 2. Clone the repository (`https://github.com/Nimaoth/Keyboard.git`)
 3. Double click `neo/enhanced_neo.ahk`, `neo/enhanced_neo_qwertz.ahk` or `qwertz/enhanced_qwertz.ahk`
 
-## Neo
-![Layout](neo/layout.png)
-
 ## Qwertz
 ![Layout](qwertz/layout.png)
+
+## Neo
+![Layout](neo/layout.png)
