@@ -1,71 +1,7 @@
 ﻿Modifier1 := false
 Modifier2 := false
 
-KEY_Space = {Space}
-
-
-KEY_q = x
-KEY_w = v
-KEY_e = l
-KEY_r = c
-KEY_t = w
-KEY_z = k
-KEY_u = h
-KEY_i = g
-KEY_o = f
-KEY_p = q
-KEY_ü = ß
-KEY_a = u
-KEY_s = i
-KEY_d = a
-KEY_f = e
-KEY_g = o
-KEY_h = s
-KEY_j = n
-KEY_k = r
-KEY_l = t
-KEY_ö = d
-KEY_ä = y
-KEY_y = ü
-KEY_x = ö
-KEY_c = ä
-KEY_v = p
-KEY_b = z
-KEY_n = b
-KEY_m = m
-KEY_minus = j
-
-KEY_q = q
-KEY_w = w
-KEY_e = e
-KEY_r = r
-KEY_t = t
-KEY_z = z
-KEY_u = u
-KEY_i = i
-KEY_o = o
-KEY_p = p
-KEY_ü = ü
-KEY_a = a
-KEY_s = s
-KEY_d = d
-KEY_f = f
-KEY_g = g
-KEY_h = h
-KEY_j = j
-KEY_k = k
-KEY_l = l
-KEY_ö = ö
-KEY_ä = ä
-KEY_y = y
-KEY_x = x
-KEY_c = c
-KEY_v = v
-KEY_b = b
-KEY_n = n
-KEY_m = m
-KEY_minus = -
-
+; modifier 1
 $Capslock::
 $^Capslock::
 $+Capslock::
@@ -90,6 +26,7 @@ $^+!Capslock Up::
     Modifier1 := false
 Return
 
+; modifier 2
 $#::
 $^#::
 $+#::
@@ -1981,58 +1918,8 @@ $Space::
 If Modifier2
     Send, 0
 Else
-    Send, %KEY_Space%
+    Send, {Space}
 Return
-
-$^Space::
-If Modifier2
-    Send, ^0
-Else
-    Send, ^%KEY_Space%
-Return
-
-$+Space::
-If Modifier2
-    Send, +0
-Else
-    Send, +%KEY_Space%
-Return
-
-$!Space::
-If Modifier2
-    Send, !0
-Else
-    Send, !%KEY_Space%
-Return
-
-$^+Space::
-If Modifier2
-    Send, ^+0
-Else
-    Send, ^+%KEY_Space%
-Return
-
-$^!Space::
-If Modifier2
-    Send, ^!0
-Else
-    Send, ^!%KEY_Space%
-Return
-
-$+!Space::
-If Modifier2
-    Send, +!0
-Else
-    Send, +!%KEY_Space%
-Return
-
-$^+!Space::
-If Modifier2
-    Send, ^+!0
-Else
-    Send, ^+!%KEY_Space%
-Return
-
 
 ; =====================================
 ;                   8
