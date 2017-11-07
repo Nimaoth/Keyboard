@@ -2,3 +2,4 @@
 LoadNeoLayout()
 
 #Include ../include/enhanced.ahk
+#Include ../include/suspend.ahk
