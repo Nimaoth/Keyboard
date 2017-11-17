@@ -1543,6 +1543,8 @@ Return
 $c::
 If Modifier1
     Send, &
+Else If Modifier2
+    Send, .
 Else
     Send, %KEY_c%
 Return
@@ -1720,6 +1722,8 @@ Return
 $n::
 If Modifier1
     Send, {End}
+Else If Modifier2
+    Send, 0
 Else
     Send, %KEY_n%
 Return
@@ -1910,15 +1914,6 @@ If Modifier1
     Send, ^+!_
 Else
     Send, ^+!%KEY_minus%
-Return
-
-; =====================================
-;                   Space
-$Space::
-If Modifier2
-    Send, 0
-Else
-    Send, {Space}
 Return
 
 ; =====================================
