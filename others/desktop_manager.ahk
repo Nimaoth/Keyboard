@@ -92,6 +92,7 @@ switchDesktopByNumber(targetDesktop)
         Send ^#{Right}
         CurrentDesktop++
         OutputDebug, [right] target: %targetDesktop% current: %CurrentDesktop%
+        Sleep, 125
     }
 
     ; Go left until we reach the desktop we want
@@ -99,6 +100,7 @@ switchDesktopByNumber(targetDesktop)
         Send ^#{Left}
         CurrentDesktop--
         OutputDebug, [left] target: %targetDesktop% current: %CurrentDesktop%
+        Sleep, 125
     }
 }
 
@@ -127,13 +129,9 @@ deleteVirtualDesktop()
 }
 
 ; Main
-SetKeyDelay, 75
+; SetKeyDelay, 75
 mapDesktopsFromRegistry()
 OutputDebug, [loading] desktops: %DesktopCount% current: %CurrentDesktop%
 
 ; User config!
-^!1::switchDesktopByNumber(1)
-^!2::switchDesktopByNumber(2)
-^!3::switchDesktopByNumber(3)
-^!4::switchDesktopByNumber(4)
-^!5::switchDesktopByNumber(5)
+

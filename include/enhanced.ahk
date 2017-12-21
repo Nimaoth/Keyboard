@@ -1,4 +1,6 @@
-﻿Modifier1 := false
+﻿#Include ../others/desktop_manager.ahk
+
+Modifier1 := false
 Modifier2 := false
 
 ; modifier 1
@@ -27,28 +29,6 @@ $^+!Capslock Up::
 Return
 
 ; modifier 2
-$#::
-$^#::
-$+#::
-$!#::
-$^+#::
-$^!#::
-$+!#::
-$^+!#::
-    Modifier1 := true
-Return
-
-$# Up::
-$^# Up::
-$+# Up::
-$!# Up::
-$^+# Up::
-$^!# Up::
-$+!# Up::
-$^+!# Up::
-    Modifier1 := false
-Return
-
 $<::
     Modifier2 := true
 Return
@@ -423,7 +403,7 @@ Return
 ;                   u
 $u::
 If Modifier1
-    Send, ^{Left}
+    Send, {Home}
 Else If Modifier2
     Send, 7
 Else
@@ -432,49 +412,49 @@ Return
 
 $^u::
 If Modifier1
-    Send, ^^{Left}
+    Send, ^{Home}
 Else
     Send, ^%KEY_u%
 Return
 
 $+u::
 If Modifier1
-    Send, +^{Left}
+    Send, +{Home}
 Else
     Send, +%KEY_u%
 Return
 
 $!u::
 If Modifier1
-    Send, !^{Left}
+    Send, !{Home}
 Else
     Send, !%KEY_u%
 Return
 
 $^+u::
 If Modifier1
-    Send, ^+^{Left}
+    Send, ^+{Home}
 Else
     Send, ^+%KEY_u%
 Return
 
 $^!u::
 If Modifier1
-    Send, ^!^{Left}
+    Send, ^!{Home}
 Else
     Send, ^!%KEY_u%
 Return
 
 $+!u::
 If Modifier1
-    Send, +!^{Left}
+    Send, +!{Home}
 Else
     Send, +!%KEY_u%
 Return
 
 $^+!u::
 If Modifier1
-    Send, ^+!^{Left}
+    Send, ^+!{Home}
 Else
     Send, ^+!%KEY_u%
 Return
@@ -543,7 +523,7 @@ Return
 ;                   o
 $o::
 If Modifier1
-    Send, ^{Right}
+    Send, {End}
 Else If Modifier2
     Send, 9
 Else
@@ -552,209 +532,174 @@ Return
 
 $^o::
 If Modifier1
-    Send, ^^{Right}
+    Send, ^{End}
 Else
     Send, ^%KEY_o%
 Return
 
 $+o::
 If Modifier1
-    Send, +^{Right}
+    Send, +{End}
 Else
     Send, +%KEY_o%
 Return
 
 $!o::
 If Modifier1
-    Send, !^{Right}
+    Send, !{End}
 Else
     Send, !%KEY_o%
 Return
 
 $^+o::
 If Modifier1
-    Send, ^+^{Right}
+    Send, ^+{End}
 Else
     Send, ^+%KEY_o%
 Return
 
 $^!o::
 If Modifier1
-    Send, ^!^{Right}
+    Send, ^!{End}
 Else
     Send, ^!%KEY_o%
 Return
 
 $+!o::
 If Modifier1
-    Send, +!^{Right}
+    Send, +!{End}
 Else
     Send, +!%KEY_o%
 Return
 
 $^+!o::
 If Modifier1
-    Send, ^+!^{Right}
+    Send, ^+!{End}
 Else
     Send, ^+!%KEY_o%
 Return
 
 ; =====================================
 ;                   p
+; $p::
+; If Modifier1
+;     Send, *
+; Else
+;     Send, %KEY_p%
+; Return
+
+; $^p::
+; If Modifier1
+;     Send, ^*
+; Else
+;     Send, ^%KEY_p%
+; Return
+
+; $+p::
+; If Modifier1
+;     Send, +*
+; Else
+;     Send, +%KEY_p%
+; Return
+
+; $!p::
+; If Modifier1
+;     Send, !*
+; Else
+;     Send, !%KEY_p%
+; Return
+
+; $^+p::
+; If Modifier1
+;     Send, ^+*
+; Else
+;     Send, ^+%KEY_p%
+; Return
+
+; $^!p::
+; If Modifier1
+;     Send, ^!*
+; Else
+;     Send, ^!%KEY_p%
+; Return
+
+; $+!p::
+; If Modifier1
+;     Send, +!*
+; Else
+;     Send, +!%KEY_p%
+; Return
+
+; $^+!p::
+; If Modifier1
+;     Send, ^+!*
+; Else
+;     Send, ^+!%KEY_p%
+; Return
 $p::
-If Modifier1
-    Send, *
-Else
     Send, %KEY_p%
 Return
 
 $^p::
-If Modifier1
-    Send, ^*
-Else
     Send, ^%KEY_p%
 Return
 
 $+p::
-If Modifier1
-    Send, +*
-Else
     Send, +%KEY_p%
 Return
 
 $!p::
-If Modifier1
-    Send, !*
-Else
     Send, !%KEY_p%
 Return
 
 $^+p::
-If Modifier1
-    Send, ^+*
-Else
     Send, ^+%KEY_p%
 Return
 
 $^!p::
-If Modifier1
-    Send, ^!*
-Else
     Send, ^!%KEY_p%
 Return
 
 $+!p::
-If Modifier1
-    Send, +!*
-Else
     Send, +!%KEY_p%
 Return
 
 $^+!p::
-If Modifier1
-    Send, ^+!*
-Else
     Send, ^+!%KEY_p%
 Return
 
 ; =====================================
 ;                   ü
 $ü::
-If Modifier1
-    Send, /
-Else
     Send, %KEY_ü%
 Return
 
 $^ü::
-If Modifier1
-    Send, ^/
-Else
     Send, ^%KEY_ü%
 Return
 
 $+ü::
-If Modifier1
-    Send, +/
-Else
     Send, +%KEY_ü%
 Return
 
 $!ü::
-If Modifier1
-    Send, !/
-Else
     Send, !%KEY_ü%
 Return
 
 $^+ü::
-If Modifier1
-    Send, ^+/
-Else
     Send, ^+%KEY_ü%
 Return
 
 $^!ü::
-If Modifier1
-    Send, ^!/
-Else
     Send, ^!%KEY_ü%
 Return
 
 $+!ü::
-If Modifier1
-    Send, +!/
-Else
     Send, +!%KEY_ü%
 Return
 
 $^+!ü::
-If Modifier1
-    Send, ^+!/
-Else
     Send, ^+!%KEY_ü%
-Return
-
-; =====================================
-;                   +
-$+::
-If Modifier1
-    Send, `%
-Return
-
-$^+::
-If Modifier1
-    Send, ^`%
-Return
-
-$++::
-If Modifier1
-    Send, +`%
-Return
-
-$!+::
-If Modifier1
-    Send, !`%
-Return
-
-$^++::
-If Modifier1
-    Send, ^+`%
-Return
-
-$^!+::
-If Modifier1
-    Send, ^!`%
-Return
-
-$+!+::
-If Modifier1
-    Send, +!`%
-Return
-
-$^+!+::
-If Modifier1
-    Send, ^+!`%
 Return
 
 ; =====================================
@@ -822,7 +767,7 @@ Return
 ;                   s
 $s::
 If Modifier1
-    Send, ]
+    Send, <
 Else If Modifier2
     Send, /
 Else
@@ -831,49 +776,49 @@ Return
 
 $^s::
 If Modifier1
-    Send, ^]
+    Send, ^<
 Else
     Send, ^%KEY_s%
 Return
 
 $+s::
 If Modifier1
-    Send, +]
+    Send, +<
 Else
     Send, +%KEY_s%
 Return
 
 $!s::
 If Modifier1
-    Send, !]
+    Send, !<
 Else
     Send, !%KEY_s%
 Return
 
 $^+s::
 If Modifier1
-    Send, ^+]
+    Send, ^+<
 Else
     Send, ^+%KEY_s%
 Return
 
 $^!s::
 If Modifier1
-    Send, ^!]
+    Send, ^!<
 Else
     Send, ^!%KEY_s%
 Return
 
 $+!s::
 If Modifier1
-    Send, +!]
+    Send, +!<
 Else
     Send, +!%KEY_s%
 Return
 
 $^+!s::
 If Modifier1
-    Send, ^+!]
+    Send, ^+!<
 Else
     Send, ^+!%KEY_s%
 Return
@@ -882,7 +827,7 @@ Return
 ;                   d
 $d::
 If Modifier1
-    Send, {!}
+    Send, >
 Else If Modifier2
     Send, *
 Else
@@ -891,49 +836,49 @@ Return
 
 $^d::
 If Modifier1
-    Send, ^{!}
+    Send, ^>
 Else
     Send, ^%KEY_d%
 Return
 
 $+d::
 If Modifier1
-    Send, +{!}
+    Send, +>
 Else
     Send, +%KEY_d%
 Return
 
 $!d::
 If Modifier1
-    Send, !{!}
+    Send, !>
 Else
     Send, !%KEY_d%
 Return
 
 $^+d::
 If Modifier1
-    Send, ^+{!}
+    Send, ^+>
 Else
     Send, ^+%KEY_d%
 Return
 
 $^!d::
 If Modifier1
-    Send, ^!{!}
+    Send, ^!>
 Else
     Send, ^!%KEY_d%
 Return
 
 $+!d::
 If Modifier1
-    Send, +!{!}
+    Send, +!>
 Else
     Send, +!%KEY_d%
 Return
 
 $^+!d::
 If Modifier1
-    Send, ^+!{!}
+    Send, ^+!>
 Else
     Send, ^+!%KEY_d%
 Return
@@ -943,7 +888,7 @@ Return
 ;                   f
 $f::
 If Modifier1
-    Send, ?
+    Send, ]
 Else If Modifier2
     Send, -
 Else
@@ -952,49 +897,49 @@ Return
 
 $^f::
 If Modifier1
-    Send, ^?
+    Send, ^]
 Else
     Send, ^%KEY_f%
 Return
 
 $+f::
 If Modifier1
-    Send, +?
+    Send, +]
 Else
     Send, +%KEY_f%
 Return
 
 $!f::
 If Modifier1
-    Send, !?
+    Send, !]
 Else
     Send, !%KEY_f%
 Return
 
 $^+f::
 If Modifier1
-    Send, ^+?
+    Send, ^+]
 Else
     Send, ^+%KEY_f%
 Return
 
 $^!f::
 If Modifier1
-    Send, ^!?
+    Send, ^!]
 Else
     Send, ^!%KEY_f%
 Return
 
 $+!f::
 If Modifier1
-    Send, +!?
+    Send, +!]
 Else
     Send, +!%KEY_f%
 Return
 
 $^+!f::
 If Modifier1
-    Send, ^+!?
+    Send, ^+!]
 Else
     Send, ^+!%KEY_f%
 Return
@@ -1004,7 +949,7 @@ Return
 ;                   g
 $g::
 If Modifier1
-    Send, {#}
+    Send, =
 Else If Modifier2
     Send, {+}
 Else
@@ -1013,49 +958,49 @@ Return
 
 $^g::
 If Modifier1
-    Send, ^{#}
+    Send, ^=
 Else
     Send, ^%KEY_g%
 Return
 
 $+g::
 If Modifier1
-    Send, +{#}
+    Send, +=
 Else
     Send, +%KEY_g%
 Return
 
 $!g::
 If Modifier1
-    Send, !{#}
+    Send, !=
 Else
     Send, !%KEY_g%
 Return
 
 $^+g::
 If Modifier1
-    Send, ^+{#}
+    Send, ^+=
 Else
     Send, ^+%KEY_g%
 Return
 
 $^!g::
 If Modifier1
-    Send, ^!{#}
+    Send, ^!=
 Else
     Send, ^!%KEY_g%
 Return
 
 $+!g::
 If Modifier1
-    Send, +!{#}
+    Send, +!=
 Else
     Send, +!%KEY_g%
 Return
 
 $^+!g::
 If Modifier1
-    Send, ^+!{#}
+    Send, ^+!=
 Else
     Send, ^+!%KEY_g%
 Return
@@ -1065,56 +1010,56 @@ Return
 ;                   h
 $h::
 If Modifier1
-    Send, {Home}
+    Send, {#}
 Else
     Send, %KEY_h%
 Return
 
 $^h::
 If Modifier1
-    Send, ^{Home}
+    Send, ^{#}
 Else
     Send, ^%KEY_h%
 Return
 
 $+h::
 If Modifier1
-    Send, +{Home}
+    Send, +{#}
 Else
     Send, +%KEY_h%
 Return
 
 $!h::
 If Modifier1
-    Send, !{Home}
+    Send, !{#}
 Else
     Send, !%KEY_h%
 Return
 
 $^+h::
 If Modifier1
-    Send, ^+{Home}
+    Send, ^+{#}
 Else
     Send, ^+%KEY_h%
 Return
 
 $^!h::
 If Modifier1
-    Send, ^!{Home}
+    Send, ^!{#}
 Else
     Send, ^!%KEY_h%
 Return
 
 $+!h::
 If Modifier1
-    Send, +!{Home}
+    Send, +!{#}
 Else
     Send, +!%KEY_h%
 Return
 
 $^+!h::
 If Modifier1
-    Send, ^+!{Home}
+    Send, ^+!{#}
 Else
     Send, ^+!%KEY_h%
 Return
@@ -1305,58 +1250,34 @@ Return
 ; =====================================
 ;                   ö
 $ö::
-If Modifier1
-    Send, {+}
-Else
     Send, %KEY_ö%
 Return
 
 $^ö::
-If Modifier1
-    Send, ^{+}
-Else
     Send, ^%KEY_ö%
 Return
 
 $+ö::
-If Modifier1
-    Send, +{+}
-Else
     Send, +%KEY_ö%
 Return
 
 $!ö::
-If Modifier1
-    Send, !{+}
-Else
     Send, !%KEY_ö%
 Return
 
 $^+ö::
-If Modifier1
-    Send, ^+{+}
-Else
     Send, ^+%KEY_ö%
 Return
 
 $^!ö::
-If Modifier1
-    Send, ^!{+}
-Else
     Send, ^!%KEY_ö%
 Return
 
 $+!ö::
-If Modifier1
-    Send, +!{+}
-Else
     Send, +!%KEY_ö%
 Return
 
 $^+!ö::
-If Modifier1
-    Send, ^+!{+}
-Else
     Send, ^+!%KEY_ö%
 Return
 
@@ -1364,59 +1285,70 @@ Return
 ; =====================================
 ;                   ä
 $ä::
-If Modifier1
-    Send, -
-Else
     Send, %KEY_ä%
 Return
 
 $^ä::
-If Modifier1
-    Send, ^-
-Else
     Send, ^%KEY_ä%
 Return
 
 $+ä::
-If Modifier1
-    Send, +-
-Else
     Send, +%KEY_ä%
 Return
 
 $!ä::
-If Modifier1
-    Send, !-
-Else
     Send, !%KEY_ä%
 Return
 
 $^+ä::
-If Modifier1
-    Send, ^+-
-Else
     Send, ^+%KEY_ä%
 Return
 
 $^!ä::
-If Modifier1
-    Send, ^!-
-Else
     Send, ^!%KEY_ä%
 Return
 
 $+!ä::
-If Modifier1
-    Send, +!-
-Else
     Send, +!%KEY_ä%
 Return
 
 $^+!ä::
-If Modifier1
-    Send, ^+!-
-Else
     Send, ^+!%KEY_ä%
+Return
+
+
+; =====================================
+;                   #
+$#::
+    Send, -
+Return
+
+$^#::
+    Send, ^-
+Return
+
+$+#::
+    Send, `%
+Return
+
+$!#::
+    Send, !-
+Return
+
+$^+#::
+    Send, ^`%
+Return
+
+$^!#::
+    Send, ^!-
+Return
+
+$+!#::
+    Send, !`%
+Return
+
+$^+!#::
+    Send, ^!`%
 Return
 
 
@@ -1721,7 +1653,7 @@ Return
 ;                   n
 $n::
 If Modifier1
-    Send, {End}
+    Send, /
 Else If Modifier2
     Send, 0
 Else
@@ -1730,49 +1662,49 @@ Return
 
 $^n::
 If Modifier1
-    Send, ^{End}
+    Send, ^/
 Else
     Send, ^%KEY_n%
 Return
 
 $+n::
 If Modifier1
-    Send, +{End}
+    Send, +/
 Else
     Send, +%KEY_n%
 Return
 
 $!n::
 If Modifier1
-    Send, !{End}
+    Send, !/
 Else
     Send, !%KEY_n%
 Return
 
 $^+n::
 If Modifier1
-    Send, ^+{End}
+    Send, ^+/
 Else
     Send, ^+%KEY_n%
 Return
 
 $^!n::
 If Modifier1
-    Send, ^!{End}
+    Send, ^!/
 Else
     Send, ^!%KEY_n%
 Return
 
 $+!n::
 If Modifier1
-    Send, +!{End}
+    Send, +!/
 Else
     Send, +!%KEY_n%
 Return
 
 $^+!n::
 If Modifier1
-    Send, ^+!{End}
+    Send, ^+!/
 Else
     Send, ^+!%KEY_n%
 Return
@@ -1839,19 +1771,19 @@ Else
 Return
 
 
+; =====================================
+;                   ,
 $,::
-If Modifier1
-    Send, "
-Else If Modifier2
+If Modifier2
     Send, 2
 Else
     Send, `,
 Return
 
+; =====================================
+;                   .
 $.::
-If Modifier1
-    Send, '
-Else If Modifier2
+If Modifier2
     Send, 3
 Else
     Send, .
@@ -1916,31 +1848,227 @@ Else
     Send, ^+!%KEY_minus%
 Return
 
-; =====================================
-;                   8
-$8::
-If Modifier1
-    Send, <
-Else
-    Send, 8
-Return
+
 
 
 ; =====================================
-;                   9
-$9::
-If Modifier1
-    Send, >
+;                   1
+$1::
+If Modifier2
+    switchDesktopByNumber(1)
 Else
-    Send, 9
+    Send, 1
 Return
 
+$^1::
+    Send, ^1
+Return
+
+$+1::
+    Send, +1
+Return
+
+$!1::
+    Send, !1
+Return
+
+$^+1::
+    Send, ^+1
+Return
+
+$^!1::
+    Send, ^!1
+Return
+
+$+!1::
+    Send, +!1
+Return
+
+$^+!1::
+    Send, ^+!1
+Return
+
+; =====================================
+;                   2
+$2::
+If Modifier2
+    switchDesktopByNumber(2)
+Else
+    Send, 2
+Return
+
+$^2::
+    Send, ^2
+Return
+
+$+2::
+    Send, +2
+Return
+
+$!2::
+    Send, !2
+Return
+
+$^+2::
+    Send, ^+2
+Return
+
+$^!2::
+    Send, ^!2
+Return
+
+$+!2::
+    Send, +!2
+Return
+
+$^+!2::
+    Send, ^+!2
+Return
+
+; =====================================
+;                   3
+$3::
+If Modifier2
+    switchDesktopByNumber(3)
+Else
+    Send, 3
+Return
+
+$^3::
+    Send, ^3
+Return
+
+$+3::
+    Send, +3
+Return
+
+$!3::
+    Send, !3
+Return
+
+$^+3::
+    Send, ^+3
+Return
+
+$^!3::
+    Send, ^!3
+Return
+
+$+!3::
+    Send, +!3
+Return
+
+$^+!3::
+    Send, ^+!3
+Return
+
+; =====================================
+;                   4
+$4::
+If Modifier2
+    switchDesktopByNumber(4)
+Else
+    Send, 4
+Return
+
+$^4::
+    Send, ^4
+Return
+
+$+4::
+    Send, +4
+Return
+
+$!4::
+    Send, !4
+Return
+
+$^+4::
+    Send, ^+4
+Return
+
+$^!4::
+    Send, ^!4
+Return
+
+$+!4::
+    Send, +!4
+Return
+
+$^+!4::
+    Send, ^+!4
+Return
+
+; =====================================
+;                   5
+$5::
+If Modifier2
+    switchDesktopByNumber(5)
+Else
+    Send, 5
+Return
+
+$^5::
+    Send, ^5
+Return
+
+$+5::
+    Send, +5
+Return
+
+$!5::
+    Send, !5
+Return
+
+$^+5::
+    Send, ^+5
+Return
+
+$^!5::
+    Send, ^!5
+Return
+
+$+!5::
+    Send, +!5
+Return
+
+$^+!5::
+    Send, ^+!5
+Return
 
 ; =====================================
 ;                   0
 $0::
-If Modifier1
-    Send, =
+If Modifier2
+    createVirtualDesktop()
 Else
     Send, 0
+Return
+
+$^0::
+    Send, ^0
+Return
+
+$+0::
+    Send, +0
+Return
+
+$!0::
+    Send, !0
+Return
+
+$^+0::
+    Send, ^+0
+Return
+
+$^!0::
+    Send, ^!0
+Return
+
+$+!0::
+    Send, +!0
+Return
+
+$^+!0::
+    Send, ^+!0
 Return
