@@ -1316,42 +1316,6 @@ $^+!ä::
     Send, ^+!%KEY_ä%
 Return
 
-
-; =====================================
-;                   #
-$#::
-    Send, -
-Return
-
-$^#::
-    Send, ^-
-Return
-
-$+#::
-    Send, `%
-Return
-
-$!#::
-    Send, !-
-Return
-
-$^+#::
-    Send, ^`%
-Return
-
-$^!#::
-    Send, ^!-
-Return
-
-$+!#::
-    Send, !`%
-Return
-
-$^+!#::
-    Send, ^!`%
-Return
-
-
 ; =====================================
 ;                   y
 $y::
@@ -1783,7 +1747,9 @@ Return
 ; =====================================
 ;                   .
 $.::
-If Modifier2
+If Modifier1
+    Send, '
+Else If Modifier2
     Send, 3
 Else
     Send, .
