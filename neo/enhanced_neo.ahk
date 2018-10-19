@@ -5,7 +5,7 @@ LoadNeoLayoutLC()
 #Include ../include/suspend.ahk
 
 
-
+#UseHook
 ; =====================================
 ;                   #
 $#::
