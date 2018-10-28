@@ -581,61 +581,6 @@ Return
 
 ; =====================================
 ;                   p
-; $p::
-; If Modifier1
-;     Send, *
-; Else
-;     Send, %KEY_p%
-; Return
-
-; $^p::
-; If Modifier1
-;     Send, ^*
-; Else
-;     Send, ^%KEY_p%
-; Return
-
-; $+p::
-; If Modifier1
-;     Send, +*
-; Else
-;     Send, +%KEY_p%
-; Return
-
-; $!p::
-; If Modifier1
-;     Send, !*
-; Else
-;     Send, !%KEY_p%
-; Return
-
-; $^+p::
-; If Modifier1
-;     Send, ^+*
-; Else
-;     Send, ^+%KEY_p%
-; Return
-
-; $^!p::
-; If Modifier1
-;     Send, ^!*
-; Else
-;     Send, ^!%KEY_p%
-; Return
-
-; $+!p::
-; If Modifier1
-;     Send, +!*
-; Else
-;     Send, +!%KEY_p%
-; Return
-
-; $^+!p::
-; If Modifier1
-;     Send, ^+!*
-; Else
-;     Send, ^+!%KEY_p%
-; Return
 $p::
     Send, %KEY_p%
 Return
