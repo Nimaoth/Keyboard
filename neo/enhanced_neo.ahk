@@ -9,9 +9,10 @@ LoadNeoLayoutLC()
 ; =====================================
 ;                   #
 $#::
-If (Modifier2) {
+If Modifier1
+    Send, {PgDn}
+Else If (Modifier2)
     SwitchCapslock()
-}
 Else
     Send, -
 Return
