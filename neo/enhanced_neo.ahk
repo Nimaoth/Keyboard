@@ -9,9 +9,7 @@ LoadNeoLayoutLC()
 ; =====================================
 ;                   #
 $#::
-If Modifier1
-    Send, {PgDn}
-Else If (Modifier2)
+If Modifier2
     SwitchCapslock()
 Else
     Send, -
@@ -45,3 +43,5 @@ $^+!#::
     Send, ^!`%
 Return
 
+; dont know why this was here
+; ListHotkeys

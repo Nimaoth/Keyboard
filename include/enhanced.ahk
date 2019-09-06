@@ -45,9 +45,9 @@ Return
 ;                   q
 $q::
 If Modifier1
-    Send, {{}
+    Send, `{
 Else If Modifier2
-    Send, {{}
+    Send, `{
 Else
     Send, %KEY_q%
 Return
@@ -582,34 +582,58 @@ Return
 ; =====================================
 ;                   p
 $p::
+If Modifier1
+    Send, {PgUp}
+Else
     Send, %KEY_p%
 Return
 
 $^p::
+If Modifier1
+    Send, ^{PgUp}
+Else
     Send, ^%KEY_p%
 Return
 
 $+p::
+If Modifier1
+    Send, +{PgUp}
+Else
     Send, +%KEY_p%
 Return
 
 $!p::
+If Modifier1
+    Send, !{PgUp}
+Else
     Send, !%KEY_p%
 Return
 
 $^+p::
+If Modifier1
+    Send, ^+{PgUp}
+Else
     Send, ^+%KEY_p%
 Return
 
 $^!p::
+If Modifier1
+    Send, ^!{PgUp}
+Else
     Send, ^!%KEY_p%
 Return
 
 $+!p::
+If Modifier1
+    Send, +!{PgUp}
+Else
     Send, +!%KEY_p%
 Return
 
 $^+!p::
+If Modifier1
+    Send, ^+!{PgUp}
+Else
     Send, ^+!%KEY_p%
 Return
 
@@ -649,12 +673,10 @@ Return
 
 ; =====================================
 ;                   +
-$+::
-If Modifier1
-    Send, {PgUp}
-Else
-    Send, {+}
-Return
+; right now just the default behaviour
+;$+::
+;    Send, {+}
+;Return
 
 ; =====================================
 ;                   a
@@ -1204,34 +1226,58 @@ Return
 ; =====================================
 ;                   ö
 $ö::
+If Modifier1
+    Send, {PgDn}
+Else
     Send, %KEY_ö%
 Return
 
 $^ö::
+If Modifier1
+    Send, ^{PgDn}
+Else
     Send, ^%KEY_ö%
 Return
 
 $+ö::
+If Modifier1
+    Send, +{PgDn}
+Else
     Send, +%KEY_ö%
 Return
 
 $!ö::
+If Modifier1
+    Send, !{PgDn}
+Else
     Send, !%KEY_ö%
 Return
 
 $^+ö::
+If Modifier1
+    Send, ^+{PgDn}
+Else
     Send, ^+%KEY_ö%
 Return
 
 $^!ö::
+If Modifier1
+    Send, ^!{PgDn}
+Else
     Send, ^!%KEY_ö%
 Return
 
 $+!ö::
+If Modifier1
+    Send, +!{PgDn}
+Else
     Send, +!%KEY_ö%
 Return
 
 $^+!ö::
+If Modifier1
+    Send, ^+!{PgDn}
+Else
     Send, ^+!%KEY_ö%
 Return
 
