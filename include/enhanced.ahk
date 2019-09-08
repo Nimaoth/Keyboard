@@ -45,9 +45,9 @@ Return
 ;                   q
 $q::
 If Modifier1
-    Send, `{
+    Send, {{}
 Else If Modifier2
-    Send, `{
+    Send, {{}
 Else
     Send, %KEY_q%
 Return
