@@ -51,7 +51,7 @@ Return
 If Modifier1
     SendInput, {´}{Space}
 Else
-    Send, +
+    Send, {+}
 Return
 
 ; dont know why this was here
