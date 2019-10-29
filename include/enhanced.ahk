@@ -640,34 +640,58 @@ Return
 ; =====================================
 ;                   ü
 $ü::
+If Modifier1
+    SendInput, {``}{Space}
+Else
     Send, %KEY_ü%
 Return
 
 $^ü::
+If Modifier1
+    SendInput, {``}{Space}
+Else
     Send, ^%KEY_ü%
 Return
 
 $+ü::
+If Modifier1
+    SendInput, {``}{Space}
+Else
     Send, +%KEY_ü%
 Return
 
 $!ü::
+If Modifier1
+    SendInput, {``}{Space}
+Else
     Send, !%KEY_ü%
 Return
 
 $^+ü::
+If Modifier1
+    SendInput, {``}{Space}
+Else
     Send, ^+%KEY_ü%
 Return
 
 $^!ü::
+If Modifier1
+    SendInput, {``}{Space}
+Else
     Send, ^!%KEY_ü%
 Return
 
 $+!ü::
+If Modifier1
+    SendInput, {``}{Space}
+Else
     Send, +!%KEY_ü%
 Return
 
 $^+!ü::
+If Modifier1
+    SendInput, {``}{Space}
+Else
     Send, ^+!%KEY_ü%
 Return
 
@@ -1285,34 +1309,58 @@ Return
 ; =====================================
 ;                   ä
 $ä::
+If Modifier1
+    Send, "
+Else
     Send, %KEY_ä%
 Return
 
 $^ä::
+If Modifier1
+    Send, ^"
+Else
     Send, ^%KEY_ä%
 Return
 
 $+ä::
+If Modifier1
+    Send, +"
+Else
     Send, +%KEY_ä%
 Return
 
 $!ä::
+If Modifier1
+    Send, !"
+Else
     Send, !%KEY_ä%
 Return
 
 $^+ä::
+If Modifier1
+    Send, ^+"
+Else
     Send, ^+%KEY_ä%
 Return
 
 $^!ä::
+If Modifier1
+    Send, ^!"
+Else
     Send, ^!%KEY_ä%
 Return
 
 $+!ä::
+If Modifier1
+    Send, +!"
+Else
     Send, +!%KEY_ä%
 Return
 
 $^+!ä::
+If Modifier1
+    Send, ^+!"
+Else
     Send, ^+!%KEY_ä%
 Return
 
