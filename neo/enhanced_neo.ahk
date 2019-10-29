@@ -9,9 +9,7 @@ LoadNeoLayoutLC()
 ; =====================================
 ;                   #
 $#::
-If Modifier1
-    SendInput, {^}{Space}
-Else If Modifier2
+If Modifier2
     SwitchCapslock()
 Else
     Send, -
@@ -49,7 +47,7 @@ Return
 ;                   #
 +::
 If Modifier1
-    SendInput, {´}{Space}
+    SendInput, {^}{Space}
 Else
     Send, {+}
 Return
