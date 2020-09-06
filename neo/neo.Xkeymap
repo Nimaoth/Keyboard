@@ -1273,7 +1273,7 @@ xkb_symbols "pc+de_neo(neo)+inet(evdev)" {
     // top row
         key <AD01> {
             type= "CUSTOM_MODS",
-            symbols[Group1]= [ x, X, braceleft, NoSymbol ]
+            symbols[Group1]= [ x, X, braceleft, Left ]
         };
         key <AD02> {
             type= "CUSTOM_MODS",
@@ -1285,7 +1285,7 @@ xkb_symbols "pc+de_neo(neo)+inet(evdev)" {
         };
         key <AD04> {
             type= "CUSTOM_MODS",
-            symbols[Group1]= [ c, C, braceright, NoSymbol ]
+            symbols[Group1]= [ c, C, braceright, Right ]
         };
         key <AD05> {
             type= "CUSTOM_MODS",
@@ -1373,11 +1373,11 @@ xkb_symbols "pc+de_neo(neo)+inet(evdev)" {
     // bottom row
         key <AB01> {
             type= "CUSTOM_MODS",
-            symbols[Group1]= [ udiaeresis, Udiaeresis, asciitilde, NoSymbol ]
+            symbols[Group1]= [ udiaeresis, Udiaeresis, asciitilde, Up ]
         };
         key <AB02> {
             type= "CUSTOM_MODS",
-            symbols[Group1]= [ odiaeresis, Odiaeresis, bar, NoSymbol ]
+            symbols[Group1]= [ odiaeresis, Odiaeresis, bar, Down ]
         };
         key <AB03> {
             type= "CUSTOM_MODS",
