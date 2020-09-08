@@ -47,7 +47,7 @@ $q::
 If Modifier1
     Send, {{}
 Else If Modifier2
-    Send, {{}
+    Send, {Left}
 Else
     Send, %KEY_q%
 Return
@@ -55,6 +55,8 @@ Return
 $^q::
 If Modifier1
     Send, ^`{
+Else If Modifier2
+    Send, ^{Left}
 Else
     Send, ^%KEY_q%
 Return
@@ -62,6 +64,8 @@ Return
 $+q::
 If Modifier1
     Send, +`{
+Else If Modifier2
+    Send, +{Left}
 Else
     Send, +%KEY_q%
 Return
@@ -69,6 +73,8 @@ Return
 $!q::
 If Modifier1
     Send, !`{
+Else If Modifier2
+    Send, !{Left}
 Else
     Send, !%KEY_q%
 Return
@@ -76,6 +82,8 @@ Return
 $^+q::
 If Modifier1
     Send, ^+`{
+Else If Modifier2
+    Send, ^+{Left}
 Else
     Send, ^+%KEY_q%
 Return
@@ -83,6 +91,8 @@ Return
 $^!q::
 If Modifier1
     Send, ^!`{
+Else If Modifier2
+    Send, ^!{Left}
 Else
     Send, ^!%KEY_q%
 Return
@@ -90,6 +100,8 @@ Return
 $+!q::
 If Modifier1
     Send, +!`{
+Else If Modifier2
+    Send, +!{Left}
 Else
     Send, +!%KEY_q%
 Return
@@ -97,6 +109,8 @@ Return
 $^+!q::
 If Modifier1
     Send, ^+!`{
+Else If Modifier2
+    Send, ^+{Left}
 Else
     Send, ^+!%KEY_q%
 Return
@@ -227,7 +241,7 @@ $r::
 If Modifier1
     Send, {}}
 Else If Modifier2
-    Send, {}}
+    Send, {Right}
 Else
     Send, %KEY_r%
 Return
@@ -235,6 +249,8 @@ Return
 $^r::
 If Modifier1
     Send, ^{}}
+Else If Modifier2
+    Send, ^{Right}
 Else
     Send, ^%KEY_r%
 Return
@@ -242,6 +258,8 @@ Return
 $+r::
 If Modifier1
     Send, +{}}
+Else If Modifier2
+    Send, +{Right}
 Else
     Send, +%KEY_r%
 Return
@@ -249,6 +267,8 @@ Return
 $!r::
 If Modifier1
     Send, !{}}
+Else If Modifier2
+    Send, !{Right}
 Else
     Send, !%KEY_r%
 Return
@@ -256,6 +276,8 @@ Return
 $^+r::
 If Modifier1
     Send, ^+{}}
+Else If Modifier2
+    Send, ^+{Right}
 Else
     Send, ^+%KEY_r%
 Return
@@ -263,6 +285,8 @@ Return
 $^!r::
 If Modifier1
     Send, ^!{}}
+Else If Modifier2
+    Send, ^!{Right}
 Else
     Send, ^!%KEY_r%
 Return
@@ -270,6 +294,8 @@ Return
 $+!r::
 If Modifier1
     Send, +!{}}
+Else If Modifier2
+    Send, +!{Right}
 Else
     Send, +!%KEY_r%
 Return
@@ -277,6 +303,8 @@ Return
 $^+!r::
 If Modifier1
     Send, ^+!{}}
+Else If Modifier2
+    Send, ^+!{Right}
 Else
     Send, ^+!%KEY_r%
 Return
@@ -1310,56 +1338,56 @@ Return
 ;                   ä
 $ä::
 If Modifier1
-    Send, "
+    Send, {!}
 Else
     Send, %KEY_ä%
 Return
 
 $^ä::
 If Modifier1
-    Send, ^"
+    Send, ^{!}
 Else
     Send, ^%KEY_ä%
 Return
 
 $+ä::
 If Modifier1
-    Send, +"
+    Send, +{!}
 Else
     Send, +%KEY_ä%
 Return
 
 $!ä::
 If Modifier1
-    Send, !"
+    Send, !{!}
 Else
     Send, !%KEY_ä%
 Return
 
 $^+ä::
 If Modifier1
-    Send, ^+"
+    Send, ^+{!}
 Else
     Send, ^+%KEY_ä%
 Return
 
 $^!ä::
 If Modifier1
-    Send, ^!"
+    Send, ^!{!}
 Else
     Send, ^!%KEY_ä%
 Return
 
 $+!ä::
 If Modifier1
-    Send, +!"
+    Send, +!{!}
 Else
     Send, +!%KEY_ä%
 Return
 
 $^+!ä::
 If Modifier1
-    Send, ^+!"
+    Send, ^+!{!}
 Else
     Send, ^+!%KEY_ä%
 Return
@@ -1369,6 +1397,8 @@ Return
 $y::
 If Modifier1
     Send, ~
+Else If Modifier2
+    Send, {Up}
 Else
     Send, %KEY_y%
 Return
@@ -1376,6 +1406,8 @@ Return
 $^y::
 If Modifier1
     Send, ^~
+Else If Modifier2
+    Send, ^{Up}
 Else
     Send, ^%KEY_y%
 Return
@@ -1383,6 +1415,8 @@ Return
 $+y::
 If Modifier1
     Send, +~
+Else If Modifier2
+    Send, +{Up}
 Else
     Send, +%KEY_y%
 Return
@@ -1390,6 +1424,8 @@ Return
 $!y::
 If Modifier1
     Send, !~
+Else If Modifier2
+    Send, !{Up}
 Else
     Send, !%KEY_y%
 Return
@@ -1397,6 +1433,8 @@ Return
 $^+y::
 If Modifier1
     Send, ^+~
+Else If Modifier2
+    Send, ^+{Up}
 Else
     Send, ^+%KEY_y%
 Return
@@ -1404,6 +1442,8 @@ Return
 $^!y::
 If Modifier1
     Send, ^!~
+Else If Modifier2
+    Send, ^!{Up}
 Else
     Send, ^!%KEY_y%
 Return
@@ -1411,6 +1451,8 @@ Return
 $+!y::
 If Modifier1
     Send, +!~
+Else If Modifier2
+    Send, +!{Up}
 Else
     Send, +!%KEY_y%
 Return
@@ -1418,16 +1460,19 @@ Return
 $^+!y::
 If Modifier1
     Send, ^+!~
+Else If Modifier2
+    Send, ^+!{Up}
 Else
     Send, ^+!%KEY_y%
 Return
-
 
 ; =====================================
 ;                   x
 $x::
 If Modifier1
     Send, |
+Else If Modifier2
+    Send, {Down}
 Else
     Send, %KEY_x%
 Return
@@ -1435,6 +1480,8 @@ Return
 $^x::
 If Modifier1
     Send, ^|
+Else If Modifier2
+    Send, ^{Down}
 Else
     Send, ^%KEY_x%
 Return
@@ -1442,6 +1489,8 @@ Return
 $+x::
 If Modifier1
     Send, +|
+Else If Modifier2
+    Send, +{Down}
 Else
     Send, +%KEY_x%
 Return
@@ -1449,6 +1498,8 @@ Return
 $!x::
 If Modifier1
     Send, !|
+Else If Modifier2
+    Send, !{Down}
 Else
     Send, !%KEY_x%
 Return
@@ -1456,6 +1507,8 @@ Return
 $^+x::
 If Modifier1
     Send, ^+|
+Else If Modifier2
+    Send, ^+{Down}
 Else
     Send, ^+%KEY_x%
 Return
@@ -1463,6 +1516,8 @@ Return
 $^!x::
 If Modifier1
     Send, ^!|
+Else If Modifier2
+    Send, ^!{Down}
 Else
     Send, ^!%KEY_x%
 Return
@@ -1470,6 +1525,8 @@ Return
 $+!x::
 If Modifier1
     Send, +!|
+Else If Modifier2
+    Send, +!{Down}
 Else
     Send, +!%KEY_x%
 Return
@@ -1477,6 +1534,8 @@ Return
 $^+!x::
 If Modifier1
     Send, ^+!|
+Else If Modifier2
+    Send, ^+!{Down}
 Else
     Send, ^+!%KEY_x%
 Return
