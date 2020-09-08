@@ -1786,7 +1786,9 @@ Return
 ; =====================================
 ;                   ,
 $,::
-If Modifier2
+If Modifier1
+    Send, `"
+Else If Modifier2
     Send, 2
 Else
     Send, `,
