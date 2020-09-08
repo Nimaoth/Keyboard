@@ -1,4 +1,6 @@
-﻿#Include ../include/neo.ahk
+﻿capsLockState := false
+
+#Include ../include/neo.ahk
 LoadNeoLayoutLC()
 
 #Include ../include/enhanced.ahk
@@ -10,7 +12,7 @@ LoadNeoLayoutLC()
 ;                   #
 $#::
 If Modifier2
-    SwitchCapslock()
+    SwitchCapslockNeo()
 Else
     Send, -
 Return

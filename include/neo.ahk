@@ -1,8 +1,6 @@
 ﻿#Include ../include/hide_tray.ahk
 
-capsLockState := false
-
-SwitchCapslock() {
+SwitchCapslockNeo() {
     global
 
     If capsLockState {
@@ -12,6 +10,16 @@ SwitchCapslock() {
     Else {
         LoadNeoLayoutUC()
         capsLockState := true
+    }
+}
+
+LoadNeoLayout() {
+    global
+    If capsLockState {
+        LoadNeoLayoutUC()
+    }
+    Else {
+        LoadNeoLayoutLC()
     }
 }
 

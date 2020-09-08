@@ -1,6 +1,29 @@
 ﻿#Include ../include/hide_tray.ahk
 
+SwitchCapslockQwertz() {
+    global
+
+    If capsLockState {
+        LoadQwertzLayoutLC()
+        capsLockState := false
+    }
+    Else {
+        LoadQwertzLayoutUC()
+        capsLockState := true
+    }
+}
+
 LoadQwertzLayout() {
+    global
+    If capsLockState {
+        LoadQwertzLayoutUC()
+    }
+    Else {
+        LoadQwertzLayoutLC()
+    }
+}
+
+LoadQwertzLayoutLC() {
     global
 
     KEY_q = q
@@ -32,9 +55,40 @@ LoadQwertzLayout() {
     KEY_b = b
     KEY_n = n
     KEY_m = m
-    KEY_minus = -
+    KEY_minus = ß
+}
 
-    TrayTip, Keyboard Layout, Enhanced Qwertz Layout activated, 1, 1
-    Sleep 3000
-    HideTrayTip()
+LoadQwertzLayoutUC() {
+    global
+
+    KEY_q = Q
+    KEY_w = W
+    KEY_e = E
+    KEY_r = R
+    KEY_t = T
+    KEY_z = Z
+    KEY_u = U
+    KEY_i = I
+    KEY_o = O
+    KEY_p = P
+    KEY_ü = Ü
+    KEY_a = A
+    KEY_s = S
+    KEY_d = D
+    KEY_f = F
+    KEY_g = G
+    KEY_h = H
+    KEY_j = J
+    KEY_k = K
+    KEY_l = L
+    KEY_ö = Ö
+    KEY_ä = Ä
+    KEY_y = Y
+    KEY_x = X
+    KEY_c = C
+    KEY_v = V
+    KEY_b = B
+    KEY_n = N
+    KEY_m = M
+    KEY_minus = ?
 }
