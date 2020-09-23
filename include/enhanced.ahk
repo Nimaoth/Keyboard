@@ -2,6 +2,12 @@
 
 Modifier1 := false
 Modifier2 := false
+DontReplaceCtrlV := true
+
+; ^ - control
+; + - shift
+; # - win
+; ! - alt
 
 ; modifier 1
 $Capslock::
@@ -1614,8 +1620,12 @@ Return
 $^v::
 If Modifier1
     Send, ^\
-Else
-    Send, ^%KEY_v%
+Else {
+    If DontReplaceCtrlV
+        Send, ^v
+    Else
+        Send, ^%KEY_v%
+}
 Return
 
 $+v::
