@@ -2,14 +2,18 @@
 
 #Include ../include/neo.ahk
 #Include ../include/qwertz.ahk
-LoadNeoLayoutLC()
+
+use_neo_layout := true
+
+If use_neo_layout
+    LoadNeoLayoutLC()
+Else
+    LoadQwertzLayoutLC()
 
 #Include ../include/enhanced.ahk
 #Include ../include/suspend.ahk
 
 #Include ../include/hide_tray.ahk
-
-use_neo_layout := false
 
 SwitchCapslockCustom() {
     global
