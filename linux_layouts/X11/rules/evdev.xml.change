@@ -1,0 +1,24 @@
+<layout>
+  <configItem>
+    <name>de_dev</name>
+    <shortDescription>de_dev</shortDescription>
+    <description>German Developer</description>
+    <languageList>
+      <iso639Id>deu</iso639Id>
+    </languageList>
+  </configItem>
+  <variantList>
+    <variant>
+      <configItem>
+        <name>qwertz</name>
+        <description>German Developer (Qwertz)</description>
+      </configItem>
+    </variant>
+    <variant>
+      <configItem>/
+        <name>neo</name>
+        <description>German Developer (Neo 2)</description>
+      </configItem>
+    </variant>
+  </variantList>
+</layout>
