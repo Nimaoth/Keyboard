@@ -102,9 +102,9 @@ xkb_symbols "qwertz" {
     // Bottom row
     // Keys (Neo): None                     Shift                   Mod3                    Mod3 + Shift            Mod4                    Mod4 + Shift            Mod3 + Mod4             Mod3 + Mod4 + Shift      
     // -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    key <AB01> { [ y,                       Y,             asciitilde,             NoSymbol,               Up,                     NoSymbol,               NoSymbol,               NoSymbol                 ] };
-    key <AB02> { [ x,                       X,             bar,                    NoSymbol,               Down,                   NoSymbol,               NoSymbol,               NoSymbol                 ] };
-    key <AB03> { [ c,                       C,             ampersand,              NoSymbol,               NoSymbol,               NoSymbol,               NoSymbol,               NoSymbol                 ] };
+    key <AB01> { [ y,                       Y,                      asciitilde,             NoSymbol,               Up,                     NoSymbol,               NoSymbol,               NoSymbol                 ] };
+    key <AB02> { [ x,                       X,                      bar,                    NoSymbol,               Down,                   NoSymbol,               NoSymbol,               NoSymbol                 ] };
+    key <AB03> { [ c,                       C,                      ampersand,              NoSymbol,               period,                 NoSymbol,               NoSymbol,               NoSymbol                 ] };
     key <AB04> { [ v,                       V,                      backslash,              NoSymbol,               NoSymbol,               NoSymbol,               NoSymbol,               NoSymbol                 ] };
     key <AB05> { [ b,                       B,                      dollar,                 NoSymbol,               NoSymbol,               NoSymbol,               NoSymbol,               NoSymbol                 ] };
     key <AB06> { [ n,                       N,                      slash,                  NoSymbol,               KP_0,                   NoSymbol,               NoSymbol,               NoSymbol                 ] };
@@ -183,7 +183,7 @@ xkb_symbols "neo" {
     // -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     key <AB01> { [ udiaeresis,              Udiaeresis,             asciitilde,             NoSymbol,               Up,                     NoSymbol,               NoSymbol,               NoSymbol                 ] };
     key <AB02> { [ odiaeresis,              Odiaeresis,             bar,                    NoSymbol,               Down,                   NoSymbol,               NoSymbol,               NoSymbol                 ] };
-    key <AB03> { [ adiaeresis,              Adiaeresis,             ampersand,              NoSymbol,               NoSymbol,               NoSymbol,               NoSymbol,               NoSymbol                 ] };
+    key <AB03> { [ adiaeresis,              Adiaeresis,             ampersand,              NoSymbol,               period,                 NoSymbol,               NoSymbol,               NoSymbol                 ] };
     key <AB04> { [ p,                       P,                      backslash,              NoSymbol,               NoSymbol,               NoSymbol,               NoSymbol,               NoSymbol                 ] };
     key <AB05> { [ z,                       Z,                      dollar,                 NoSymbol,               NoSymbol,               NoSymbol,               NoSymbol,               NoSymbol                 ] };
     key <AB06> { [ b,                       B,                      slash,                  NoSymbol,               KP_0,                   NoSymbol,               NoSymbol,               NoSymbol                 ] };
