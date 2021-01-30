@@ -7,8 +7,9 @@ xkb_symbols "basic" {
     key <SPCE> { [ space ] };
 
     // Number row
-    // Keys (Neo): None                     Shift                   Mod3                    Mod3 + Shift            Mod4                    Mod4 + Shift            Mod3 + Mod4             Mod3 + Mod4 + Shift      
+    // Keys (Neo): None                     Shift                   Mod3                    Mod3 + Shift            Mod4                    Mod4 + Shift            Mod3 + Mod4             Mod3 + Mod4 + Shift
     // -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    key.type[Group1] = "TWO_LEVEL";
     key <TLDE> { [ dead_circumflex,         dead_abovering,         U21BB,                  NoSymbol,               NoSymbol,               NoSymbol,               NoSymbol,               NoSymbol                 ] };
     key <AE01> { [ 1,                       EuroSign,               onesuperior,            NoSymbol,               NoSymbol,               NoSymbol,               NoSymbol,               NoSymbol                 ] };
     key <AE02> { [ 2,                       quotedbl,               twosuperior,            NoSymbol,               NoSymbol,               NoSymbol,               NoSymbol,               NoSymbol                 ] };
@@ -57,18 +58,18 @@ xkb_symbols "qwertz" {
 
     // Legend
     // ===============
-    // Levels in Xkbmap jargon to be found here in the definitions. 
+    // Levels in Xkbmap jargon to be found here in the definitions.
     // These are the levels used, and Xorg's translations:
     // --------------------------------------------------------------
-    // Xorg:       Level1                   Level2                  Level3                  Level4                  Level5                  Level6                  Level7                  Level8                   
-    // Neo:        Ebene1                   Ebene2                  Ebene3                  Ebene5                  Ebene4                  Pseudo-Ebene            Ebene6                  ???                      
-    // Keys (Neo): None                     Shift                   Mod3                    Mod3 + Shift            Mod4                    Mod4 + Shift            Mod3 + Mod4             Mod3 + Mod4 + Shift      
+    // Xorg:       Level1                   Level2                  Level3                  Level4                  Level5                  Level6                  Level7                  Level8
+    // Neo:        Ebene1                   Ebene2                  Ebene3                  Ebene5                  Ebene4                  Pseudo-Ebene            Ebene6                  ???
+    // Keys (Neo): None                     Shift                   Mod3                    Mod3 + Shift            Mod4                    Mod4 + Shift            Mod3 + Mod4             Mod3 + Mod4 + Shift
 
     // Main Keyboard
     key.type[Group1] = "DEV_MODS";
 
     // Top row
-    // Keys (Neo): None                     Shift                   Mod3                    Mod3 + Shift            Mod4                    Mod4 + Shift            Mod3 + Mod4             Mod3 + Mod4 + Shift      
+    // Keys (Neo): None                     Shift                   Mod3                    Mod3 + Shift            Mod4                    Mod4 + Shift            Mod3 + Mod4             Mod3 + Mod4 + Shift
     // -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     key <AD01> { [ q,                       Q,                      braceleft,              NoSymbol,               NoSymbol,               NoSymbol,               NoSymbol,               NoSymbol                 ] };
     key <AD02> { [ w,                       W,                      parenleft,              NoSymbol,               NoSymbol,               NoSymbol,               NoSymbol,               NoSymbol                 ] };
@@ -84,7 +85,7 @@ xkb_symbols "qwertz" {
     key <AD12> { [ plus,                    asterisk,               asciicircum,            NoSymbol,               NoSymbol,               NoSymbol,               NoSymbol,               NoSymbol                 ] };
 
     // Middle row
-    // Keys (Neo): None                     Shift                   Mod3                    Mod3 + Shift            Mod4                    Mod4 + Shift            Mod3 + Mod4             Mod3 + Mod4 + Shift      
+    // Keys (Neo): None                     Shift                   Mod3                    Mod3 + Shift            Mod4                    Mod4 + Shift            Mod3 + Mod4             Mod3 + Mod4 + Shift
     // -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     key <AC01> { [ a,                       A,                      bracketleft,            NoSymbol,               NoSymbol,               NoSymbol,               NoSymbol,               NoSymbol                 ] };
     key <AC02> { [ s,                       S,                      less,                   NoSymbol,               NoSymbol,               NoSymbol,               NoSymbol,               NoSymbol                 ] };
@@ -100,7 +101,7 @@ xkb_symbols "qwertz" {
     key <AC12> { [ minus,                   percent,                NoSymbol,               NoSymbol,               NoSymbol,               NoSymbol,               NoSymbol,               NoSymbol                 ] };
 
     // Bottom row
-    // Keys (Neo): None                     Shift                   Mod3                    Mod3 + Shift            Mod4                    Mod4 + Shift            Mod3 + Mod4             Mod3 + Mod4 + Shift      
+    // Keys (Neo): None                     Shift                   Mod3                    Mod3 + Shift            Mod4                    Mod4 + Shift            Mod3 + Mod4             Mod3 + Mod4 + Shift
     // -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     key <AB01> { [ y,                       Y,                      asciitilde,             NoSymbol,               Up,                     NoSymbol,               NoSymbol,               NoSymbol                 ] };
     key <AB02> { [ x,                       X,                      bar,                    NoSymbol,               Down,                   NoSymbol,               NoSymbol,               NoSymbol                 ] };
@@ -135,19 +136,19 @@ xkb_symbols "neo" {
 
     // Legend
     // ===============
-    // Levels in Xkbmap jargon to be found here in the definitions. 
+    // Levels in Xkbmap jargon to be found here in the definitions.
     // These are the levels used, and Xorg's translations:
     // --------------------------------------------------------------
-    // Xorg:       Level1                   Level2                  Level3                  Level4                  Level5                  Level6                  Level7                  Level8                   
-    // Neo:        Ebene1                   Ebene2                  Ebene3                  Ebene5                  Ebene4                  Pseudo-Ebene            Ebene6                  ???                      
-    // Keys (Neo): None                     Shift                   Mod3                    Mod3 + Shift            Mod4                    Mod4 + Shift            Mod3 + Mod4             Mod3 + Mod4 + Shift      
+    // Xorg:       Level1                   Level2                  Level3                  Level4                  Level5                  Level6                  Level7                  Level8
+    // Neo:        Ebene1                   Ebene2                  Ebene3                  Ebene5                  Ebene4                  Pseudo-Ebene            Ebene6                  ???
+    // Keys (Neo): None                     Shift                   Mod3                    Mod3 + Shift            Mod4                    Mod4 + Shift            Mod3 + Mod4             Mod3 + Mod4 + Shift
 
     // Main Keyboard
     key.type[Group1] = "DEV_MODS";
 
 
     // Top row
-    // Keys (Neo): None                     Shift                   Mod3                    Mod3 + Shift            Mod4                    Mod4 + Shift            Mod3 + Mod4             Mod3 + Mod4 + Shift      
+    // Keys (Neo): None                     Shift                   Mod3                    Mod3 + Shift            Mod4                    Mod4 + Shift            Mod3 + Mod4             Mod3 + Mod4 + Shift
     // -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     key <AD01> { [ x,                       X,                      braceleft,              NoSymbol,               NoSymbol,               NoSymbol,               NoSymbol,               NoSymbol                 ] };
     key <AD02> { [ v,                       V,                      parenleft,              NoSymbol,               NoSymbol,               NoSymbol,               NoSymbol,               NoSymbol                 ] };
@@ -163,7 +164,7 @@ xkb_symbols "neo" {
     key <AD12> { [ plus,                    asterisk,               asciicircum,            NoSymbol,               NoSymbol,               NoSymbol,               NoSymbol,               NoSymbol                 ] };
 
     // Middle row
-    // Keys (Neo): None                     Shift                   Mod3                    Mod3 + Shift            Mod4                    Mod4 + Shift            Mod3 + Mod4             Mod3 + Mod4 + Shift      
+    // Keys (Neo): None                     Shift                   Mod3                    Mod3 + Shift            Mod4                    Mod4 + Shift            Mod3 + Mod4             Mod3 + Mod4 + Shift
     // -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     key <AC01> { [ u,                       U,                      bracketleft,            NoSymbol,               NoSymbol,               NoSymbol,               NoSymbol,               NoSymbol                 ] };
     key <AC02> { [ i,                       I,                      less,                   NoSymbol,               NoSymbol,               NoSymbol,               NoSymbol,               NoSymbol                 ] };
@@ -179,7 +180,7 @@ xkb_symbols "neo" {
     key <AC12> { [ minus,                   percent,                NoSymbol,               NoSymbol,               NoSymbol,               NoSymbol,               NoSymbol,               NoSymbol                 ] };
 
     // Bottom row
-    // Keys (Neo): None                     Shift                   Mod3                    Mod3 + Shift            Mod4                    Mod4 + Shift            Mod3 + Mod4             Mod3 + Mod4 + Shift      
+    // Keys (Neo): None                     Shift                   Mod3                    Mod3 + Shift            Mod4                    Mod4 + Shift            Mod3 + Mod4             Mod3 + Mod4 + Shift
     // -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     key <AB01> { [ udiaeresis,              Udiaeresis,             asciitilde,             NoSymbol,               Up,                     NoSymbol,               NoSymbol,               NoSymbol                 ] };
     key <AB02> { [ odiaeresis,              Odiaeresis,             bar,                    NoSymbol,               Down,                   NoSymbol,               NoSymbol,               NoSymbol                 ] };
