@@ -1,29 +1,4 @@
-﻿#Include ../include/hide_tray.ahk
-
-SwitchCapslockQwertz() {
-    global
-
-    If capsLockState {
-        LoadQwertzLayoutLC()
-        capsLockState := false
-    }
-    Else {
-        LoadQwertzLayoutUC()
-        capsLockState := true
-    }
-}
-
-LoadQwertzLayout() {
-    global
-    If capsLockState {
-        LoadQwertzLayoutUC()
-    }
-    Else {
-        LoadQwertzLayoutLC()
-    }
-}
-
-LoadQwertzLayoutLC() {
+﻿LoadQwertzLayoutLC() {
     global
 
     KEY_q = q
@@ -55,6 +30,8 @@ LoadQwertzLayoutLC() {
     KEY_b = b
     KEY_n = n
     KEY_m = m
+    KEY_comma = `,
+    KEY_period = .
     KEY_minus = ß
 }
 
@@ -90,5 +67,7 @@ LoadQwertzLayoutUC() {
     KEY_b = B
     KEY_n = N
     KEY_m = M
+    KEY_comma = `;
+    KEY_period = :
     KEY_minus = ?
 }

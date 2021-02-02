@@ -1,29 +1,4 @@
-﻿#Include ../include/hide_tray.ahk
-
-SwitchCapslockNeo() {
-    global
-
-    If capsLockState {
-        LoadNeoLayoutLC()
-        capsLockState := false
-    }
-    Else {
-        LoadNeoLayoutUC()
-        capsLockState := true
-    }
-}
-
-LoadNeoLayout() {
-    global
-    If capsLockState {
-        LoadNeoLayoutUC()
-    }
-    Else {
-        LoadNeoLayoutLC()
-    }
-}
-
-LoadNeoLayoutLC() {
+﻿LoadNeoLayoutLC() {
     global
 
     KEY_q = x
@@ -55,6 +30,8 @@ LoadNeoLayoutLC() {
     KEY_b = z
     KEY_n = b
     KEY_m = m
+    KEY_comma = `,
+    KEY_period = .
     KEY_minus = j
 }
 
@@ -90,5 +67,7 @@ LoadNeoLayoutUC() {
     KEY_b = Z
     KEY_n = B
     KEY_m = M
+    KEY_comma = `;
+    KEY_period = :
     KEY_minus = J
 }

@@ -1860,7 +1860,70 @@ If Modifier1
 Else If Modifier2
     Send, 2
 Else
-    Send, `,
+    Send, %KEY_comma%
+Return
+
+$^,::
+If Modifier1
+    Send, ^`"
+Else If Modifier2
+    Send, ^2
+Else
+    Send, ^%KEY_comma%
+Return
+
+$+,::
+If Modifier1
+    Send, +`"
+Else If Modifier2
+    Send, +2
+Else
+    Send, +%KEY_comma%
+Return
+
+$!,::
+If Modifier1
+    Send, !`"
+Else If Modifier2
+    Send, !2
+Else
+    Send, !%KEY_comma%
+Return
+
+$^+,::
+If Modifier1
+    Send, ^+`"
+Else If Modifier2
+    Send, ^+2
+Else
+    Send, ^+%KEY_comma%
+Return
+
+$^!,::
+If Modifier1
+    Send, ^!`"
+Else If Modifier2
+    Send, ^!2
+Else
+    Send, ^!%KEY_comma%
+Return
+
+$+!,::
+If Modifier1
+    Send, +!`"
+Else If Modifier2
+    Send, +!2
+Else
+    Send, +!%KEY_comma%
+Return
+
+$^+!,::
+If Modifier1
+    Send, ^+!`"
+Else If Modifier2
+    Send, ^+!2
+Else
+    Send, ^+!%KEY_comma%
 Return
 
 ; =====================================
@@ -1871,9 +1934,71 @@ If Modifier1
 Else If Modifier2
     Send, 3
 Else
-    Send, .
+    Send, %KEY_period%
 Return
 
+$^.::
+If Modifier1
+    Send, ^'
+Else If Modifier2
+    Send, ^3
+Else
+    Send, ^%KEY_period%
+Return
+
+$+.::
+If Modifier1
+    Send, +'
+Else If Modifier2
+    Send, +3
+Else
+    Send, +%KEY_period%
+Return
+
+$!.::
+If Modifier1
+    Send, !'
+Else If Modifier2
+    Send, !3
+Else
+    Send, !%KEY_period%
+Return
+
+$^+.::
+If Modifier1
+    Send, ^+'
+Else If Modifier2
+    Send, ^+3
+Else
+    Send, ^+%KEY_period%
+Return
+
+$^!.::
+If Modifier1
+    Send, ^!'
+Else If Modifier2
+    Send, ^!3
+Else
+    Send, ^!%KEY_period%
+Return
+
+$+!.::
+If Modifier1
+    Send, +!'
+Else If Modifier2
+    Send, +!3
+Else
+    Send, +!%KEY_period%
+Return
+
+$^+!.::
+If Modifier1
+    Send, ^+!'
+Else If Modifier2
+    Send, ^+!3
+Else
+    Send, ^+!%KEY_period%
+Return
 
 ; =====================================
 ;                   -
