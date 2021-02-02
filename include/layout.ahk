@@ -1,4 +1,7 @@
 capsLockState := false
+current_layout := 2
+
+SwitchLayout()
 
 #Include ../include/qwertz.ahk
 #Include ../include/neo.ahk
@@ -9,8 +12,6 @@ capsLockState := false
 #Include ../include/suspend.ahk
 
 #Include ../include/hide_tray.ahk
-
-current_layout := 2
 
 SetLayoutLC() {
     global
@@ -69,8 +70,6 @@ SwitchCapslock() {
         capsLockState := true
     }
 }
-
-SetLayoutLC()
 
 #UseHook
 
