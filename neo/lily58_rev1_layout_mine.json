@@ -1,7 +1,6 @@
 {
     "version": 1,
-    "notes": "",
-    "documentation": "\"This file is a QMK Configurator export. You can import this at <https://config.qmk.fm>. It can also be used directly with QMK's source code.\n\nTo setup your QMK environment check out the tutorial: <https://docs.qmk.fm/#/newbs>\n\nYou can convert this file to a keymap.c using this command: `qmk json2c {keymap}`\n\nYou can compile this keymap using this command: `qmk compile {keymap}`\"\n",
+    "documentation": "This file is a QMK Configurator export. You can import this at <https://config.qmk.fm>. It can also be used directly with QMK's source code.\n\nTo setup your QMK environment check out the tutorial: <https://docs.qmk.fm/#/newbs>\n\nYou can convert this file to a keymap.c using this command: `qmk json2c {keymap}`\n\nYou can compile this keymap using this command: `qmk compile {keymap}`\n",
     "keyboard": "lily58/rev1",
     "keymap": "lily58_rev1_layout_mine",
     "layout": "LAYOUT",
@@ -78,7 +77,7 @@
             "KC_GRV",
             "RALT(KC_MINS)",
             "KC_TRNS",
-            "KC_TRNS",
+            "KC_INS",
             "KC_TRNS",
             "RALT(KC_7)",
             "LSFT(KC_8)",
@@ -138,7 +137,7 @@
             "KC_TRNS",
             "KC_TRNS",
             "KC_TRNS",
-            "KC_TRNS",
+            "KC_NLCK",
             "KC_TRNS",
             "KC_F9",
             "KC_F10",
@@ -258,7 +257,7 @@
             "KC_GRV",
             "RALT(KC_MINS)",
             "KC_TRNS",
-            "KC_TRNS",
+            "KC_INS",
             "KC_TRNS",
             "RALT(KC_7)",
             "LSFT(KC_8)",
@@ -318,7 +317,7 @@
             "KC_TRNS",
             "KC_TRNS",
             "KC_TRNS",
-            "KC_TRNS",
+            "KC_NLCK",
             "KC_TRNS",
             "KC_F9",
             "KC_F10",
@@ -438,7 +437,7 @@
             "KC_GRV",
             "RALT(KC_MINS)",
             "KC_TRNS",
-            "KC_TRNS",
+            "KC_INS",
             "KC_TRNS",
             "RALT(KC_7)",
             "LSFT(KC_8)",
@@ -498,7 +497,7 @@
             "KC_TRNS",
             "KC_TRNS",
             "KC_TRNS",
-            "KC_TRNS",
+            "KC_NLCK",
             "KC_TRNS",
             "KC_F9",
             "KC_F10",
@@ -547,5 +546,6 @@
             "KC_TRNS"
         ]
     ],
-    "author": "Nimaoth"
+    "author": "Nimaoth",
+    "notes": ""
 }
